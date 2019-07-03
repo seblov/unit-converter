@@ -10,20 +10,47 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="css" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
     <title>Weight Converter</title>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
         <div class="col-md-6">
           <h1
             class="display-4
-                   text-center"
-          >
+                   text-center mb-3">
             Weight Converter
           </h1>
-        </div>
+          <form>
+            <div class="form-group">
+              <input
+                id="lbsInput"
+                type="number"
+                class="form-control form-control-lg"
+                placeholder="Enter pounds"
+              />
+            </div>
+          </form>
+          <div id="output">
+            <div id="grams" class="card mb-2">
+              <div class="card-body">
+                <h4>Grams:</h4>
+                <div id="gramsOutput"></div>
+              </div>
+              </div>
+              <div id="kgs" class="card mb-2">
+                <div class="card-body">
+                  <h4>Kilograms:</h4>
+                  <div id="kgOutput"></div>
+                </div>
+            </div>
+                <div id="ozs" class="card mb-2">
+                    <div class="card-body">
+                      <h4>Ounces:</h4>
+                      <div id="ozOutput"></div>
+                    </div>
+          </div>
       </div>
     </div>
   </body>

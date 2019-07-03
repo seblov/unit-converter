@@ -4,6 +4,23 @@
 }
 
 body {
-  margin-top: 700px;
-  background: blue;
+  margin-top: 70px;
+  background: #2d2e2e;
+  color: #fff;
+}
+
+#output {
+  text-align: left;
+}
+
+/* OUTPUT CARDS */
+
+#grams {
+  background: #8ae9c1;
+}
+#kgs {
+  background: #fbacbe;
+}
+#ozs {
+  background: #f18f01;
 }
