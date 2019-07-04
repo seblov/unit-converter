@@ -18,12 +18,19 @@ body {
 #grams {
   background: #8ae9c1;
 }
+
 #kgs {
   background: #fbacbe;
 }
+
 #ozs {
   background: #f18f01;
 }
+
 #st {
   background: #2E4057;
+}
+
+#lbs {
+  background: #BB342F;
 }

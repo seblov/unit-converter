@@ -1,83 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../CSS/style.css" />
-    <title>Weight Converter</title>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <h1
-            class="display-4
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <title>Weight Converter</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h1 class="display-4
                    text-center mb-3">
-            Weight Converter
-          </h1>
+          Weight Converter
+        </h1>
 
-          <!-- Input for pounds -->
-          <form>
-            <div class="form-group">
-              <input
-                id="lbsInput"
-                type="number"
-                class="form-control form-control-lg"
-                placeholder="Enter pounds"
-              />
-            </div>
-          </form>
-            <!-- input for Kilograms -->
-          <form>
-              <div class="form-group">
-                <input
-                  id="kgsInput"
-                  type="number"
-                  class="form-control form-control-lg"
-                  placeholder="Enter kilograms"
-                />
-              </div>
-            </form>
+        <!-- Input for pounds -->
+        <form>
+          <div class="form-group">
+            <input id="lbsInput" type="number" class="form-control form-control-lg" placeholder="Enter pounds" />
+          </div>
+        </form>
 
-          <div id="output">
-            <div id="grams" class="card mb-2">
-              <div class="card-body">
-                <h4>Grams:</h4>
-                <div id="gramsOutput"></div>
-              </div>
-              </div>
-              <div id="kgs" class="card mb-2">
-                <div class="card-body">
-                  <h4>Kilograms:</h4>
-                  <div id="kgOutput"></div>
-                </div>
+        <!-- input for Kilograms -->
+        <form>
+          <div class="form-group">
+            <input id="kgsInput" type="number" class="form-control form-control-lg" placeholder="Enter kilograms" />
+          </div>
+        </form>
+
+        <!-- Conversion Outputs -->
+        <div id="output">
+          <div id="lbs" class="card mb-2">
+            <div class="card-body">
+              <h4>Pounds:</h4>
+              <div id="lbsOutput"></div>
             </div>
-                <div id="ozs" class="card mb-2">
-                    <div class="card-body">
-                      <h4>Ounces:</h4>
-                      <div id="ozOutput"></div>
-                    </div>
+          </div>
+          <div id="grams" class="card mb-2">
+            <div class="card-body">
+              <h4>Grams:</h4>
+              <div id="gramsOutput"></div>
+            </div>
+          </div>
+          <div id="kgs" class="card mb-2">
+            <div class="card-body">
+              <h4>Kilograms:</h4>
+              <div id="kgOutput"></div>
+            </div>
+          </div>
+          <div id="ozs" class="card mb-2">
+            <div class="card-body">
+              <h4>Ounces:</h4>
+              <div id="ozOutput"></div>
+            </div>
           </div>
           <div id="st" class="card mb-2">
-              <div class="card-body">
-                <h4>Stones:</h4>
-                <div id="stOutput"></div>
-              </div>
-    </div>
+            <div class="card-body">
+              <h4>Stones:</h4>
+              <div id="stOutput"></div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <!-- <script>
+      <!-- <script>
     document.getElementById('lbsInput').addEventListener('input', function(){
     console.log(123);
     });
     </script> -->
-    <script src="../JS/main.js"></script>
-  </body>
+      <script src="../JS/main.js"></script>
+</body>
+
 </html>
