@@ -22,6 +22,8 @@
                    text-center mb-3">
             Weight Converter
           </h1>
+
+          <!-- Input for pounds -->
           <form>
             <div class="form-group">
               <input
@@ -32,6 +34,18 @@
               />
             </div>
           </form>
+            <!-- input for Kilograms -->
+          <form>
+              <div class="form-group">
+                <input
+                  id="kgsInput"
+                  type="number"
+                  class="form-control form-control-lg"
+                  placeholder="Enter kilograms"
+                />
+              </div>
+            </form>
+
           <div id="output">
             <div id="grams" class="card mb-2">
               <div class="card-body">
@@ -51,7 +65,19 @@
                       <div id="ozOutput"></div>
                     </div>
           </div>
+          <div id="st" class="card mb-2">
+              <div class="card-body">
+                <h4>Stones:</h4>
+                <div id="stOutput"></div>
+              </div>
+    </div>
       </div>
     </div>
+    <!-- <script>
+    document.getElementById('lbsInput').addEventListener('input', function(){
+    console.log(123);
+    });
+    </script> -->
+    <script src="../JS/main.js"></script>
   </body>
 </html>
