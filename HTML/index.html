@@ -8,189 +8,192 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="icon" href="../IMG/handsome.png">
   <title>Unit Conversion</title>
 </head>
 
 <body>
 
-  <!-- !Weigh Conversion -->
+  <button class="collapsible">Open Collapsible</button>
+  <div class="content">
+    <!-- !Weigh Conversion -->
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h1 class="display-4
+                   text-center mb-3">
+            Weight Converter
+          </h1>
+
+          <!-- !Input for pounds -->
+          <div class="row justify-content-around">
+            <form>
+              <div class="form-group">
+                <input id="lbsInput" type="number" class="form-control form-control-lg" placeholder="Enter pounds" />
+              </div>
+            </form>
+
+            <!-- !input for Kilograms -->
+            <form>
+              <div class="form-group">
+                <input id="kgsInput" type="number" class="form-control form-control-lg" placeholder="Enter kilograms" />
+              </div>
+            </form>
+          </div>
+
+          <!-- !Conversion Outputs -->
+          <div id="output">
+            <div id="lbs" class="card mb-2">
+              <div class="card-body">
+                <h4>Pounds:</h4>
+                <div id="lbsOutput"></div>
+              </div>
+            </div>
+            <div id="grams" class="card mb-2">
+              <div class="card-body">
+                <h4>Grams:</h4>
+                <div id="gramsOutput"></div>
+              </div>
+            </div>
+            <div id="kgs" class="card mb-2">
+              <div class="card-body">
+                <h4>Kilograms:</h4>
+                <div id="kgOutput"></div>
+              </div>
+            </div>
+            <div id="ozs" class="card mb-2">
+              <div class="card-body">
+                <h4>Ounces:</h4>
+                <div id="ozOutput"></div>
+              </div>
+            </div>
+            <div id="st" class="card mb-2">
+              <div class="card-body">
+                <h4>Stones:</h4>
+                <div id="stOutput"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="collapsible">Open Collapsible</button>
+  <div class="content">
+  <!-- !Length Conversion -->
+
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-md-6">
         <h1 class="display-4
-                   text-center mb-3">
-          Weight Converter
+                         text-center mb-3">
+          Length Converter
         </h1>
 
-        <!-- !Input for pounds -->
+        <!-- !Input for feet -->
         <div class="row justify-content-around">
           <form>
             <div class="form-group">
-              <input id="lbsInput" type="number" class="form-control form-control-lg" placeholder="Enter pounds" />
+              <input id="feetInput" type="number" class="form-control form-control-lg" placeholder="Enter feet" />
             </div>
           </form>
 
-          <!-- !input for Kilograms -->
+          <!-- !input for meter -->
+
           <form>
             <div class="form-group">
-              <input id="kgsInput" type="number" class="form-control form-control-lg" placeholder="Enter kilograms" />
+              <input id="metersInput" type="number" class="form-control form-control-lg" placeholder="Enter meter" />
             </div>
           </form>
+
+
+          <!-- !Input for miles -->
+          <div class="row justify-content-around">
+            <form>
+              <div class="form-group">
+                <input id="milesInput" type="number" class="form-control form-control-lg" placeholder="Enter miles" />
+              </div>
+            </form>
+          </div>
+
+          <!-- !Input for kilometers -->
+
+          <div class="row justify-content-around">
+            <form>
+              <div class="form-group">
+                <input id="kmInput" type="number" class="form-control form-control-lg" placeholder="Enter kilometers" />
+              </div>
+            </form>
+          </div>
+
+          <!-- !Input for inches -->
+
+          <div class="row justify-content-around">
+            <form>
+              <div class="form-group">
+                <input id="inchInput" type="number" class="form-control form-control-lg" placeholder="Enter inches" />
+              </div>
+            </form>
+          </div>
+
+          <!-- !Input for centimeter -->
+
+          <div class="row justify-content-around">
+            <form>
+              <div class="form-group">
+                <input id="cmInput" type="number" class="form-control form-control-lg" placeholder="Enter centimeter" />
+              </div>
+            </form>
+          </div>
         </div>
 
         <!-- !Conversion Outputs -->
+
         <div id="output">
-          <div id="lbs" class="card mb-2">
+          <div id="feet" class="card mb-2">
             <div class="card-body">
-              <h4>Pounds:</h4>
-              <div id="lbsOutput"></div>
+              <h4>Feet:</h4>
+              <div id="feetOutput"></div>
             </div>
           </div>
-          <div id="grams" class="card mb-2">
+          <div id="meters" class="card mb-2">
             <div class="card-body">
-              <h4>Grams:</h4>
-              <div id="gramsOutput"></div>
+              <h4>Meter:</h4>
+              <div id="meterOutput"></div>
             </div>
           </div>
-          <div id="kgs" class="card mb-2">
+          <div id="miles" class="card mb-2">
             <div class="card-body">
-              <h4>Kilograms:</h4>
-              <div id="kgOutput"></div>
+              <h4>Miles:</h4>
+              <div id="milesOutput"></div>
             </div>
           </div>
-          <div id="ozs" class="card mb-2">
+          <div id="km" class="card mb-2">
             <div class="card-body">
-              <h4>Ounces:</h4>
-              <div id="ozOutput"></div>
+              <h4>Kilometers:</h4>
+              <div id="kmOutput"></div>
             </div>
           </div>
-          <div id="st" class="card mb-2">
+          <div id="inch" class="card mb-2">
             <div class="card-body">
-              <h4>Stones:</h4>
-              <div id="stOutput"></div>
+              <h4>Inches:</h4>
+              <div id="inchOutput"></div>
+            </div>
+          </div>
+          <div id="cm" class="card mb-2">
+            <div class="card-body">
+              <h4>Centimeter:</h4>
+              <div id="feetOutput"></div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
 
-      <!-- !Length Conversion -->
-
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <h1 class="display-4
-                         text-center mb-3">
-              Length Converter
-            </h1>
-
-            <!-- !Input for feet -->
-            <div class="row justify-content-around">
-              <form>
-                <div class="form-group">
-                  <input id="feetInput" type="number" class="form-control form-control-lg" placeholder="Enter feet" />
-                </div>
-              </form>
-
-              <!-- !input for meter -->
-
-              <form>
-                <div class="form-group">
-                  <input id="metersInput" type="number" class="form-control form-control-lg"
-                    placeholder="Enter meter" />
-                </div>
-              </form>
-
-
-              <!-- !Input for miles -->
-              <div class="row justify-content-around">
-                <form>
-                  <div class="form-group">
-                    <input id="milesInput" type="number" class="form-control form-control-lg"
-                      placeholder="Enter miles" />
-                  </div>
-                </form>
-              </div>
-
-              <!-- !Input for kilometers -->
-
-              <div class="row justify-content-around">
-                <form>
-                  <div class="form-group">
-                    <input id="kmInput" type="number" class="form-control form-control-lg"
-                      placeholder="Enter kilometers" />
-                  </div>
-                </form>
-              </div>
-
-              <!-- !Input for inches -->
-
-              <div class="row justify-content-around">
-                <form>
-                  <div class="form-group">
-                    <input id="inchInput" type="number" class="form-control form-control-lg"
-                      placeholder="Enter inches" />
-                  </div>
-                </form>
-              </div>
-
-              <!-- !Input for centimeter -->
-
-              <div class="row justify-content-around">
-                <form>
-                  <div class="form-group">
-                    <input id="cmInput" type="number" class="form-control form-control-lg"
-                      placeholder="Enter centimeter" />
-                  </div>
-                </form>
-              </div>
-            </div>
-
-            <!-- !Conversion Outputs -->
-
-            <div id="output">
-              <div id="feet" class="card mb-2">
-                <div class="card-body">
-                  <h4>Feet:</h4>
-                  <div id="feetOutput"></div>
-                </div>
-              </div>
-              <div id="meters" class="card mb-2">
-                <div class="card-body">
-                  <h4>Meter:</h4>
-                  <div id="meterOutput"></div>
-                </div>
-              </div>
-              <div id="miles" class="card mb-2">
-                <div class="card-body">
-                  <h4>Miles:</h4>
-                  <div id="milesOutput"></div>
-                </div>
-              </div>
-              <div id="km" class="card mb-2">
-                <div class="card-body">
-                  <h4>Kilometers:</h4>
-                  <div id="kmOutput"></div>
-                </div>
-              </div>
-              <div id="inch" class="card mb-2">
-                <div class="card-body">
-                  <h4>Inches:</h4>
-                  <div id="inchOutput"></div>
-                </div>
-              </div>
-              <div id="cm" class="card mb-2">
-                <div class="card-body">
-                  <h4>Centimeter:</h4>
-                  <div id="feetOutput"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <script src="../JS/main.js"></script>
+  <script src="../JS/main.js"></script>
 </body>
 
 </html>

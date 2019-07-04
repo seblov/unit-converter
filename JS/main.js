@@ -1,3 +1,22 @@
+//Collapse
+
+let coll = document.getElementsByClassName("collapsible");
+let i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+// !Weight units
+
 // LBs conversion
 
 document.getElementById('lbsInput').addEventListener('input', function (e) {
@@ -19,6 +38,9 @@ document.getElementById('kgsInput').addEventListener('input', function (e) {
     document.getElementById('kgOutput').innerHTML = kgs * 1;
     document.getElementById('lbsOutput').innerHTML = kgs * 2.2046;
 });
+
+// !Distance units
+
 
 // Meter Conversion
 

@@ -13,6 +13,18 @@ body {
   text-align: left;
 }
 
+/* BUTTONS */
+
+button {
+  margin: auto;
+  display: block;
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 50px;
+}
+
 /* OUTPUT CARDS */
 
 /* !OUTPUT CARDS WEIGHT */
