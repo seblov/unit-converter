@@ -4,7 +4,7 @@
 }
 
 body {
-  margin-top: 70px;
+  margin-top: 30px;
   background: #2d2e2e;
   color: #fff;
 }
@@ -14,6 +14,8 @@ body {
 }
 
 /* OUTPUT CARDS */
+
+/* !OUTPUT CARDS WEIGHT */
 
 #grams {
   background: #8ae9c1;
@@ -33,4 +35,29 @@ body {
 
 #lbs {
   background: #BB342F;
+}
+
+/* !OUTPUT CARDS LENGTH */
+
+#feet {
+  background: #8CBCB9;
+}
+
+#meters {
+  background: #8D6A9F;
+}
+
+#miles {
+  background: #DDA448;
+}
+
+#km {
+  background: #EA526F;
+}
+#inch {
+  background: #279AF1;
+}
+
+#cm {
+  background: #C3A29E; 
 }

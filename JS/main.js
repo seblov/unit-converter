@@ -18,4 +18,26 @@ document.getElementById('kgsInput').addEventListener('input', function (e) {
     document.getElementById('gramsOutput').innerHTML = kgs * 1000;
     document.getElementById('kgOutput').innerHTML = kgs * 1;
     document.getElementById('lbsOutput').innerHTML = kgs * 2.2046;
+});
+
+// Meter Conversion
+
+document.getElementById('metersInput').addEventListener('input', function (e) {
+    let meter = e.target.value;
+    document.getElementById('ozOutput').innerHTML = meter * 16;
+    document.getElementById('stOutput').innerHTML = meter * 0.1574;
+    document.getElementById('gramsOutput').innerHTML = meter * 1000;
+    document.getElementById('kgOutput').innerHTML = meter * 1;
+    document.getElementById('lbsOutput').innerHTML = meter * 2.2046;
+});
+
+// Feet Conversion
+
+document.getElementById('feetInput').addEventListener('input', function (e) {
+    let feet = e.target.value;
+    document.getElementById('ozOutput').innerHTML = feet * 16;
+    document.getElementById('stOutput').innerHTML = feet * 0.1574;
+    document.getElementById('gramsOutput').innerHTML = feet * 1000;
+    document.getElementById('kgOutput').innerHTML = feet * 1;
+    document.getElementById('lbsOutput').innerHTML = feet * 2.2046;
 }); 
